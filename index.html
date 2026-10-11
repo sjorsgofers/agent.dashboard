@@ -5,59 +5,209 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Agent Network – Chief of Staff Dashboard</title>
 <style>
-/* styles remain the same as previous full version */
+:root {
+  --bg: #0b1220; --panel: #111827; --card: #1e293b; --border: #334155;
+  --text: #e2e8f0; --muted: #94a3b8; --purple: #7c3aed; --green: #22c55e;
+  --yellow: #eab308; --red: #ef4444; --blue: #3b82f6;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); height: 100vh; overflow: hidden; }
+.app { display: none; grid-template-columns: 220px 1fr; height: 100vh; }
+.app.visible { display: grid; }
+.sidebar { background: #0f172a; border-right: 1px solid var(--border); padding: 16px 10px; }
+.logo { display: flex; align-items: center; gap: 8px; font-weight: 700; padding: 8px 12px 18px; }
+.logo-icon { width: 26px; height: 26px; background: linear-gradient(135deg,#7c3aed,#a78bfa); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+.nav-item { padding: 9px 12px; border-radius: 8px; color: var(--muted); cursor: pointer; font-size: 14px; }
+.nav-item.active { background: #1e1b4b; color: #c4b5fd; }
+.main { display: flex; flex-direction: column; }
+.header { height: 60px; border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 16px; gap: 12px; background: #0f172a; }
+.live-badge { background: #1e1b4b; color: #a78bfa; font-size: 12px; padding: 3px 10px; border-radius: 20px; display: flex; align-items: center; gap: 5px; }
+.live-dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; animation: pulse 1.5s infinite; }
+@keyframes pulse { 50% { opacity: .4; } }
+.metrics { display: flex; gap: 8px; }
+.metric { background: #1e293b; border: 1px solid var(--border); border-radius: 8px; padding: 5px 12px; font-size: 12px; }
+.metric .val { font-weight: 700; font-size: 15px; }
+.metric.green .val { color: var(--green); } .metric.yellow .val { color: var(--yellow); } .metric.red .val { color: var(--red); }
+.canvas-wrap { flex: 1; overflow: auto; background: #0b1220; position: relative; }
+.graph { min-width: 1600px; min-height: 900px; position: relative; padding: 40px; }
+.node { position: absolute; border-radius: 10px; padding: 10px 14px; cursor: pointer; border: 2px solid transparent; }
+.node:hover { transform: translateY(-1px); }
+.chief { background: linear-gradient(180deg,#5b21b6,#4c1d95); min-width: 260px; text-align: center; font-weight: 600; box-shadow: 0 0 24px rgba(124,58,237,.35); }
+.manager { background: #1e293b; border: 1px solid #334155; min-width: 150px; text-align: center; font-size: 13px; font-weight: 600; }
+.agent { background: #1e293b; border: 1px solid #334155; min-width: 120px; font-size: 12px; padding: 7px 10px; }
+.status-dot { width: 7px; height: 7px; border-radius: 50%; display: inline-block; margin-right: 5px; }
+.agent.healthy { border-left: 3px solid var(--green); } .agent.attention { border-left: 3px solid var(--yellow); } .agent.error { border-left: 3px solid var(--red); }
+svg.lines { position: absolute; inset: 0; pointer-events: none; }
+.line { stroke: #4c1d95; stroke-width: 1.5; fill: none; opacity: .6; }
+.detail { position: fixed; right: 0; top: 60px; bottom: 0; width: 380px; background: #111827; border-left: 1px solid var(--border); transform: translateX(100%); transition: .25s; z-index: 40; padding: 18px; overflow-y: auto; }
+.detail.open { transform: translateX(0); }
+.legend { position: absolute; bottom: 16px; left: 16px; background: #111827ee; border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 12px; }
+.calendar-panel { position: absolute; top: 16px; right: 16px; width: 300px; background: #111827ee; border: 1px solid var(--border); border-radius: 10px; padding: 14px; z-index: 5; }
+.event { padding: 6px 0; border-bottom: 1px solid #1e293b; font-size: 12px; }
 </style>
 </head>
 <body>
-<!-- password gate and full dashboard UI from previous version -->
-<div id="login-screen" style="position:fixed;inset:0;background:#0b1220;z-index:9999;display:flex;align-items:center;justify-content:center;">
-  <div style="background:#111827;padding:32px;border-radius:16px;border:1px solid #334155;width:320px;text-align:center;">
-    <div style="font-size:24px;margin-bottom:8px">⚡</div>
-    <h2 style="margin-bottom:16px">AI Agent Network</h2>
-    <input id="pw" type="password" placeholder="Wachtwoord" style="width:100%;padding:10px;border-radius:8px;border:1px solid #334155;background:#1e293b;color:#e2e8f0;margin-bottom:12px;">
-    <button onclick="checkPw()" style="width:100%;padding:10px;border-radius:8px;background:#7c3aed;color:white;border:none;cursor:pointer;font-weight:600;">Toegang</button>
-    <div id="pw-err" style="color:#ef4444;font-size:13px;margin-top:8px;display:none;">Onjuist wachtwoord</div>
+<div id="login" style="position:fixed;inset:0;background:#0b1220;z-index:9999;display:flex;align-items:center;justify-content:center;">
+  <div style="background:#111827;padding:28px;border-radius:14px;border:1px solid #334155;width:300px;text-align:center;">
+    <div style="font-size:22px;margin-bottom:6px">⚡</div>
+    <h2 style="margin-bottom:14px">AI Agent Network</h2>
+    <input id="pw" type="password" placeholder="Wachtwoord" style="width:100%;padding:9px;border-radius:7px;border:1px solid #334155;background:#1e293b;color:#e2e8f0;margin-bottom:10px;">
+    <button onclick="checkPw()" style="width:100%;padding:9px;border-radius:7px;background:#7c3aed;color:#fff;border:none;cursor:pointer;font-weight:600;">Toegang</button>
+    <div id="err" style="color:#ef4444;font-size:12px;margin-top:6px;display:none;">Onjuist wachtwoord</div>
   </div>
 </div>
+<div class="app" id="app">
+  <aside class="sidebar">
+    <div class="logo"><div class="logo-icon">⚡</div> Agent Network</div>
+    <div class="nav-item active">Overview</div>
+    <div class="nav-item">Agents</div>
+    <div class="nav-item">Monitoring</div>
+  </aside>
+  <div class="main">
+    <header class="header">
+      <h1 style="font-size:15px">AI Agent Network</h1>
+      <div class="live-badge"><span class="live-dot"></span> Live</div>
+      <div class="metrics">
+        <div class="metric"><span>Total</span> <span class="val" id="m-total">0</span></div>
+        <div class="metric green"><span>Healthy</span> <span class="val" id="m-healthy">0</span></div>
+        <div class="metric yellow"><span>Attention</span> <span class="val" id="m-attention">0</span></div>
+        <div class="metric red"><span>Errors</span> <span class="val" id="m-errors">0</span></div>
+      </div>
+    </header>
+    <div class="canvas-wrap"><div class="graph" id="graph"><svg class="lines" id="lines"></svg></div></div>
+    <div class="calendar-panel"><h3 style="font-size:13px;margin-bottom:8px">📅 Agenda</h3><div id="events"></div></div>
+    <div class="legend">
+      <div style="font-weight:600;margin-bottom:4px">Legend</div>
+      <div><span style="color:#22c55e">●</span> Healthy</div>
+      <div><span style="color:#eab308">●</span> Attention</div>
+      <div><span style="color:#ef4444">●</span> Error</div>
+    </div>
+  </div>
+</div>
+<div class="detail" id="detail">
+  <button onclick="closeDetail()" style="position:absolute;top:10px;right:12px;background:none;border:none;color:#94a3b8;font-size:18px;cursor:pointer">×</button>
+  <h2 id="d-name" style="font-size:16px"></h2>
+  <div id="d-sub" style="color:#94a3b8;font-size:12px;margin:4px 0 12px"></div>
+  <div id="d-status" style="font-weight:600;margin-bottom:12px"></div>
+  <div id="d-feed"></div>
+</div>
 <script>
-function checkPw() {
-  if (document.getElementById('pw').value === 'agentnet2026') {
-    document.getElementById('login-screen').style.display = 'none';
+const PW_HASH = "5449a87082ae824fc5e05bb9fb0ba664710b69168c2ff737cc0ae5a15a9cda1f";
+async function sha256(str) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,"0")).join("");
+}
+async function checkPw() {
+  const hash = await sha256(document.getElementById("pw").value);
+  if (hash === PW_HASH) {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("app").classList.add("visible");
+    init();
   } else {
-    document.getElementById('pw-err').style.display = 'block';
+    document.getElementById("err").style.display = "block";
   }
 }
-</script>
-<!-- Full interactive dashboard UI + hierarchy + calendar from previous commit -->
-<script>
-// ... existing hierarchy, render, selectNode, etc. ...
-
-// LIVE STATUS POLLING
+const hierarchy = {
+  chief: { id:"chief", name:"Chief of Staff", status:"healthy", role:"Executive", children:["ops","content","finance","sales","research","support"] },
+  ops: { id:"ops", name:"Operations", status:"healthy", role:"Process", children:[
+    {id:"lead",name:"Lead Intake",status:"healthy"},{id:"sync",name:"Data Sync",status:"healthy"},{id:"sched",name:"Scheduling",status:"healthy"},
+    {id:"vendor",name:"Vendor Mgmt",status:"attention"},{id:"comp",name:"Compliance",status:"attention"},{id:"alerts",name:"Alerts",status:"error"}
+  ]},
+  content: { id:"content", name:"Content", status:"healthy", role:"Editorial", children:[
+    {id:"drafting",name:"Drafter",status:"healthy"},{id:"brief",name:"Briefing",status:"healthy"},{id:"news",name:"Newsletter",status:"healthy"},
+    {id:"brand1",name:"Brand",status:"attention"},{id:"editor",name:"Editor",status:"attention"}
+  ]},
+  finance: { id:"finance", name:"Finance", status:"healthy", role:"Analysis", children:[
+    {id:"budget",name:"Budget",status:"healthy"},{id:"forecast",name:"Forecast",status:"healthy"},{id:"variance",name:"Variance",status:"attention"},
+    {id:"quota",name:"Quota",status:"error"},{id:"tax",name:"Tax",status:"error"}
+  ]},
+  sales: { id:"sales", name:"Sales", status:"healthy", role:"Growth", children:[
+    {id:"leadscorer",name:"Lead Scorer",status:"healthy"},{id:"deal",name:"Deal Assist",status:"attention"},{id:"pipeline",name:"Pipeline",status:"healthy"}
+  ]},
+  research: { id:"research", name:"Research", status:"healthy", role:"Insights", children:[
+    {id:"lit",name:"Literature",status:"healthy"},{id:"data",name:"Data Miner",status:"healthy"},{id:"cite",name:"Citations",status:"attention"}
+  ]},
+  support: { id:"support", name:"Support", status:"healthy", role:"Success", children:[
+    {id:"ticket",name:"Tickets",status:"healthy"},{id:"kb",name:"Knowledge",status:"attention"},{id:"escalation",name:"Escalation",status:"error"}
+  ]}
+};
+const calendarEvents = [
+  {day:"ma 12 okt", time:"08:00–17:00", title:"Crowe", loc:"Eindhoven"},
+  {day:"ma 12 okt", time:"19:30–21:00", title:"Kickboksen"},
+  {day:"di 13 okt", time:"08:00–17:00", title:"Crowe", loc:"Eindhoven"},
+  {day:"za 17 okt", time:"11:00–12:30", title:"Sparren training"}
+];
+function init() {
+  render();
+  updateMetrics();
+  renderCalendar();
+  loadLiveStatus();
+  setInterval(loadLiveStatus, 30000);
+}
+function render() {
+  document.querySelectorAll(".node").forEach(n => n.remove());
+  document.getElementById("lines").innerHTML = "";
+  place("chief", hierarchy.chief.name, "chief", 700, 30, hierarchy.chief);
+  hierarchy.chief.children.forEach((mid, i) => {
+    const m = hierarchy[mid];
+    const x = 40 + i * 250;
+    place(mid, m.name, "manager", x, 150, m);
+    (m.children||[]).forEach((a, j) => {
+      place(a.id, a.name, "agent "+a.status, x-10 + (j%2)*140, 280 + Math.floor(j/2)*60, a);
+    });
+  });
+}
+function place(id, name, cls, x, y, data) {
+  const el = document.createElement("div");
+  el.className = "node " + cls;
+  el.style.left = x+"px"; el.style.top = y+"px";
+  el.dataset.id = id;
+  el.innerHTML = cls.includes("agent") ? `<span class="status-dot" style="background:${data.status==="healthy"?"#22c55e":data.status==="attention"?"#eab308":"#ef4444"}"></span>${name}` : name;
+  el.onclick = () => showDetail(data, cls);
+  document.getElementById("graph").appendChild(el);
+}
+function showDetail(data, cls) {
+  document.getElementById("d-name").textContent = data.name;
+  document.getElementById("d-sub").textContent = data.role || "Agent";
+  const s = data.status || "healthy";
+  document.getElementById("d-status").innerHTML = `<span style="color:${s==="healthy"?"#22c55e":s==="attention"?"#eab308":"#ef4444"}">● ${s}</span>`;
+  document.getElementById("detail").classList.add("open");
+}
+function closeDetail() { document.getElementById("detail").classList.remove("open"); }
+function updateMetrics() {
+  let h=0,a=0,e=0,t=0;
+  Object.values(hierarchy).forEach(n => {
+    if (n.children) {
+      t++; if (n.status==="healthy") h++; else if (n.status==="attention") a++; else e++;
+      n.children.forEach(c => { t++; if (c.status==="healthy") h++; else if (c.status==="attention") a++; else e++; });
+    }
+  });
+  document.getElementById("m-total").textContent = t;
+  document.getElementById("m-healthy").textContent = h;
+  document.getElementById("m-attention").textContent = a;
+  document.getElementById("m-errors").textContent = e;
+}
+function renderCalendar() {
+  document.getElementById("events").innerHTML = calendarEvents.map(ev =>
+    `<div class="event"><div style="color:#94a3b8;font-size:11px">${ev.day} · ${ev.time}</div><div style="font-weight:500">${ev.title}</div>${ev.loc?`<div style="color:#64748b;font-size:11px">${ev.loc}</div>`:""}</div>`
+  ).join("");
+}
 async function loadLiveStatus() {
   try {
-    const res = await fetch('status.json?t=' + Date.now());
+    const res = await fetch("status.json?t="+Date.now());
     if (!res.ok) return;
     const data = await res.json();
     if (!data.agents) return;
     Object.entries(data.agents).forEach(([id, status]) => {
       if (hierarchy[id]) hierarchy[id].status = status;
-      else {
-        Object.values(hierarchy).forEach(node => {
-          if (node.children) {
-            const child = node.children.find(c => c.id === id);
-            if (child) child.status = status;
-          }
-        });
-      }
+      else Object.values(hierarchy).forEach(n => {
+        if (n.children) { const c = n.children.find(x => x.id===id); if (c) c.status = status; }
+      });
     });
     updateMetrics();
     render();
-  } catch (e) {
-    console.warn('Live status load failed', e);
-  }
+  } catch(e) {}
 }
-setInterval(loadLiveStatus, 30000);
-loadLiveStatus();
 </script>
 </body>
 </html>
