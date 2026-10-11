@@ -5,21 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Agent Network – Live Dashboard</title>
 <style>
-:root { --bg:#0b1220; --border:#334155; --text:#e2e8f0; --muted:#94a3b8; --green:#22c55e; --yellow:#eab308; --red:#ef4444; }
+:root { --bg:#0b1220; --border:#334155; --text:#e2e8f0; --muted:#94a3b8; }
 * { box-sizing:border-box; margin:0; padding:0; }
 body { font-family:system-ui,sans-serif; background:var(--bg); color:var(--text); height:100vh; overflow:hidden; }
 .app { display:none; grid-template-columns:200px 1fr; height:100vh; }
 .app.visible { display:grid; }
 .sidebar { background:#0f172a; border-right:1px solid var(--border); padding:16px 10px; }
 .logo { font-weight:700; padding:8px 12px 16px; }
-.header { height:56px; border-bottom:1px solid var(--border); display:flex; align-items:center; padding:0 16px; gap:12px; background:#0f172a; }
-.canvas { flex:1; overflow:auto; position:relative; padding:30px; }
-.node { position:absolute; background:#1e293b; border:1px solid var(--border); border-radius:10px; padding:10px 14px; cursor:pointer; font-size:13px; }
+.header { height:56px; border-bottom:1px solid var(--border); display:flex; align-items:center; padding:0 16px; background:#0f172a; }
+.canvas { flex:1; overflow:auto; position:relative; }
+.graph { min-width:1400px; min-height:900px; position:relative; padding:40px; }
+.node { position:absolute; background:#1e293b; border:1px solid var(--border); border-radius:10px; padding:10px 14px; cursor:pointer; font-size:13px; z-index:2; }
+.chief { background:linear-gradient(180deg,#5b21b6,#4c1d95); font-weight:700; min-width:220px; text-align:center; font-size:15px; }
 .manager { font-weight:600; min-width:140px; text-align:center; }
 .agent { min-width:110px; font-size:12px; }
 .status-dot { width:7px; height:7px; border-radius:50%; display:inline-block; margin-right:6px; }
-.legend { position:absolute; bottom:16px; left:16px; background:#111827ee; border:1px solid var(--border); border-radius:8px; padding:10px 14px; font-size:12px; }
-.calendar { position:absolute; top:16px; right:16px; width:280px; background:#111827ee; border:1px solid var(--border); border-radius:10px; padding:14px; }
+svg.lines { position:absolute; inset:0; pointer-events:none; z-index:1; }
+.line { stroke:#4c1d95; stroke-width:1.5; fill:none; opacity:.7; }
+.legend { position:absolute; bottom:16px; left:16px; background:#111827ee; border:1px solid var(--border); border-radius:8px; padding:10px 14px; font-size:12px; z-index:3; }
+.calendar { position:absolute; top:16px; right:16px; width:280px; background:#111827ee; border:1px solid var(--border); border-radius:10px; padding:14px; z-index:3; }
 </style>
 </head>
 <body>
@@ -38,14 +42,16 @@ body { font-family:system-ui,sans-serif; background:var(--bg); color:var(--text)
       <strong>Live Dashboard</strong>
       <span id="last-update" style="color:#94a3b8;font-size:12px;margin-left:auto"></span>
     </header>
-    <div class="canvas" id="canvas">
-      <div id="graph" style="position:relative;min-height:800px"></div>
+    <div class="canvas">
+      <div class="graph" id="graph">
+        <svg class="lines" id="lines"></svg>
+      </div>
       <div class="legend">
         <div><span style="color:#22c55e">●</span> Healthy</div>
         <div><span style="color:#eab308">●</span> Attention</div>
         <div><span style="color:#ef4444">●</span> Error</div>
       </div>
-      <div class="calendar" id="calendar"><strong>📅 Agenda</strong><div id="events" style="margin-top:8px;font-size:12px"></div></div>
+      <div class="calendar"><strong>📅 Agenda</strong><div id="events" style="margin-top:8px;font-size:12px;color:#64748b">Agenda wordt geladen wanneer beschikbaar</div></div>
     </div>
   </div>
 </div>
@@ -73,33 +79,49 @@ async function load() {
     render();
   } catch(e) { console.warn(e); }
 }
+function color(s) { return s === "healthy" ? "#22c55e" : s === "attention" ? "#eab308" : "#ef4444"; }
 function render() {
-  const g = document.getElementById("graph");
-  g.innerHTML = "";
-  if (!data.groups || data.groups.length === 0) {
-    g.innerHTML = "<div style='padding:40px;color:#94a3b8'>Nog geen agents gekoppeld. Laat de Chief of Staff status.json bijwerken.</div>";
+  const graph = document.getElementById("graph");
+  const svg = document.getElementById("lines");
+  svg.innerHTML = "";
+  document.querySelectorAll(".node").forEach(n => n.remove());
+  const groups = data.groups || [];
+  if (groups.length === 0) {
+    graph.insertAdjacentHTML("beforeend", "<div style='padding:40px;color:#94a3b8;position:relative;z-index:2'>Nog geen agents gekoppeld.</div>");
     return;
   }
-  data.groups.forEach((group, i) => {
+  const chiefX = 620;
+  const chiefY = 30;
+  placeNode("chief", "Chief of Staff", "chief", chiefX, chiefY, "healthy");
+  groups.forEach((group, i) => {
     const gx = 40 + i * 280;
-    const m = document.createElement("div");
-    m.className = "node manager";
-    m.style.left = gx + "px";
-    m.style.top = "40px";
-    m.innerHTML = `<span class="status-dot" style="background:${color(group.status)}"></span>${group.name}`;
-    g.appendChild(m);
+    const gy = 160;
+    placeNode(group.id, group.name, "manager", gx, gy, group.status);
+    drawLine(chiefX + 110, chiefY + 50, gx + 70, gy);
     (group.agents || []).forEach((a, j) => {
-      const el = document.createElement("div");
-      el.className = "node agent";
-      el.style.left = (gx - 10 + (j % 2) * 150) + "px";
-      el.style.top = (140 + Math.floor(j / 2) * 55) + "px";
-      el.innerHTML = `<span class="status-dot" style="background:${color(a.status)}"></span>${a.name}`;
-      g.appendChild(el);
+      const ax = gx - 10 + (j % 2) * 150;
+      const ay = 280 + Math.floor(j / 2) * 55;
+      placeNode(a.id, a.name, "agent", ax, ay, a.status);
+      drawLine(gx + 70, gy + 45, ax + 60, ay);
     });
   });
 }
-function color(s) { return s === "healthy" ? "#22c55e" : s === "attention" ? "#eab308" : "#ef4444"; }
-document.getElementById("events").innerHTML = "<div style='color:#64748b'>Agenda wordt geladen wanneer beschikbaar</div>";
+function placeNode(id, name, cls, x, y, status) {
+  const el = document.createElement("div");
+  el.className = "node " + cls;
+  el.style.left = x + "px";
+  el.style.top = y + "px";
+  el.innerHTML = `<span class="status-dot" style="background:${color(status)}"></span>${name}`;
+  document.getElementById("graph").appendChild(el);
+}
+function drawLine(x1, y1, x2, y2) {
+  const svg = document.getElementById("lines");
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  const midY = (y1 + y2) / 2;
+  path.setAttribute("d", `M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}`);
+  path.setAttribute("class", "line");
+  svg.appendChild(path);
+}
 </script>
 </body>
 </html>
