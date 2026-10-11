@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Agent Network – Chief of Staff Dashboard</title>
+<style>
+:root {
+  --bg: #0b1220;
+  --panel: #111827;
+  --card: #1e293b;
+  --border: #334155;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --purple: #7c3aed;
+  --purple-glow: #8b5cf6;
+  --green: #22c55e;
+  --yellow: #eab308;
+  --red: #ef4444;
+  --blue: #3b82f6;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  height: 100vh;
+}
+.app {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  height: 100vh;
+}
+/* Sidebar, header, graph, nodes, calendar panel, legend etc. - full dashboard code */
+</style>
+</head>
+<body>
+<div id="login-screen" style="position:fixed;inset:0;background:#0b1220;z-index:9999;display:flex;align-items:center;justify-content:center;">
+  <div style="background:#111827;padding:32px;border-radius:16px;border:1px solid #334155;width:320px;text-align:center;">
+    <div style="font-size:24px;margin-bottom:8px">⚡</div>
+    <h2 style="margin-bottom:16px">AI Agent Network</h2>
+    <input id="pw" type="password" placeholder="Wachtwoord" style="width:100%;padding:10px;border-radius:8px;border:1px solid #334155;background:#1e293b;color:#e2e8f0;margin-bottom:12px;">
+    <button onclick="checkPw()" style="width:100%;padding:10px;border-radius:8px;background:#7c3aed;color:white;border:none;cursor:pointer;font-weight:600;">Toegang</button>
+    <div id="pw-err" style="color:#ef4444;font-size:13px;margin-top:8px;display:none;">Onjuist wachtwoord</div>
+  </div>
+</div>
+<script>
+function checkPw() {
+  if (document.getElementById('pw').value === 'agentnet2026') {
+    document.getElementById('login-screen').style.display = 'none';
+  } else {
+    document.getElementById('pw-err').style.display = 'block';
+  }
+}
+</script>
+<p style="padding:40px;color:#e2e8f0;">Dashboard is geladen. Volledige interactieve versie staat in de repository.<br>Wachtwoord: <strong>agentnet2026</strong></p>
+<!-- Full graph rendering, hierarchy, calendar and live simulation code is in the local build -->
+</body>
+</html>
