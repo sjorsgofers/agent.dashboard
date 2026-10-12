@@ -1,104 +1,79 @@
 {
-  "updated": "2026-10-12T16:25:00+02:00",
+  "updated": "2026-10-12T17:23:00+02:00",
   "groups": [
     {
-      "id": "section-ops-1",
-      "name": "ops",
-      "status": "attention",
+      "id": "section-mu0dk3jf-1",
+      "name": "Ops",
+      "status": "healthy",
       "agents": [
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
-          "name": "Infrastructure Monitor",
+          "name": "Troubleshoot",
           "status": "healthy"
-        },
-        {
-          "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
-          "name": "Deployment Agent",
-          "status": "healthy"
-        },
-        {
-          "id": "0205a7a9-d9e5-4e9b-af40-2cb2b38c28b2",
-          "name": "Log Aggregator",
-          "status": "attention"
         }
       ]
     },
     {
       "id": "section-content-1",
-      "name": "content",
+      "name": "Content",
       "status": "healthy",
       "agents": [
         {
-          "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
-          "name": "Content Writer",
-          "status": "healthy"
-        },
-        {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
-          "name": "SEO Optimizer",
+          "name": "Hilde Mail",
           "status": "healthy"
         }
       ]
     },
     {
-      "id": "section-finance-1",
-      "name": "finance",
+      "id": "section-mtzjz3u3-2",
+      "name": "Finance",
       "status": "error",
       "agents": [
         {
           "id": "79004317-51a4-4ec5-912b-165fc345908d",
-          "name": "Budget Tracker",
+          "name": "💰",
           "status": "error"
-        },
-        {
-          "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
-          "name": "Invoice Processor",
-          "status": "healthy"
         }
       ]
     },
     {
       "id": "section-sales-1",
-      "name": "sales",
-      "status": "attention",
+      "name": "Sales",
+      "status": "healthy",
       "agents": [
         {
-          "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
-          "name": "Lead Qualifier",
+          "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
+          "name": "Jimmy",
           "status": "healthy"
-        },
-        {
-          "id": "ac6bff6b-ea87-4c68-8efd-d4ef5a88acb2",
-          "name": "CRM Sync",
-          "status": "attention"
         }
       ]
     },
     {
       "id": "section-research-1",
-      "name": "research",
-      "status": "healthy",
+      "name": "Research",
+      "status": "attention",
       "agents": [
         {
-          "id": "acde8389-e500-4c56-930f-90c2c8f14d72",
-          "name": "Market Analyst",
-          "status": "healthy"
-        },
-        {
-          "id": "cd77fc67-b5d8-4508-9455-e48efc7a998a",
-          "name": "Competitor Scanner",
-          "status": "healthy"
+          "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
+          "name": "AI knowledge",
+          "status": "attention"
         }
       ]
     },
     {
-      "id": "section-support-1",
-      "name": "support",
+      "id": "section-mtzzp0fh-1",
+      "name": "Support",
       "status": "healthy",
       "agents": [
         {
-          "id": "6511ed19-07c8-44ef-b1a8-e4ca9244086c",
-          "name": "Ticket Handler",
+          "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
+          "name": "Agenda",
+          "status": "healthy"
+        },
+        {
+          "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
+          "name": "Outlook",
           "status": "healthy"
         }
       ]
