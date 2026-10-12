@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-12T18:21:35+02:00",
+  "updated": "2026-10-12T19:16:42+02:00",
   "groups": [
     {
       "id": "section-mu0dk3jf-1",
       "name": "Troubleshoot",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
