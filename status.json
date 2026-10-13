@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-13T09:59:37+02:00",
+  "updated": "2026-10-13T10:14:00+02:00",
   "groups": [
     {
       "id": "section-mu0dk3jf-1",
       "name": "Troubleshoot",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
@@ -31,12 +31,12 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
           "name": "AI knowledge",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "79004317-51a4-4ec5-912b-165fc345908d",
