@@ -1,22 +1,10 @@
 {
-  "updated": "2026-10-13T18:17:00+02:00",
+  "updated": "2026-10-13T19:15:00+02:00",
   "groups": [
     {
-      "id": "section-mu0dk3jf-1",
-      "name": "Troubleshoot",
-      "status": "error",
-      "agents": [
-        {
-          "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
-          "name": "Troubleshoot",
-          "status": "error"
-        }
-      ]
-    },
-    {
-      "id": "section-mtzjz3u3-2",
-      "name": "Personal",
-      "status": "attention",
+      "id": "section-ops-1",
+      "name": "Ops",
+      "status": "healthy",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -27,17 +15,26 @@
           "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
           "name": "Agenda",
           "status": "healthy"
-        },
-        {
-          "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
-          "name": "Outlook",
-          "status": "attention"
-        },
+        }
+      ]
+    },
+    {
+      "id": "section-content-1",
+      "name": "Content",
+      "status": "healthy",
+      "agents": [
         {
           "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
           "name": "AI knowledge",
           "status": "healthy"
-        },
+        }
+      ]
+    },
+    {
+      "id": "section-finance-1",
+      "name": "Finance",
+      "status": "attention",
+      "agents": [
         {
           "id": "79004317-51a4-4ec5-912b-165fc345908d",
           "name": "💰",
@@ -46,14 +43,38 @@
       ]
     },
     {
-      "id": "section-mtzzp0fh-1",
-      "name": "Fresh",
+      "id": "section-sales-1",
+      "name": "Sales",
       "status": "healthy",
       "agents": [
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Hilde Mail",
           "status": "healthy"
+        }
+      ]
+    },
+    {
+      "id": "section-research-1",
+      "name": "Research",
+      "status": "healthy",
+      "agents": [
+        {
+          "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
+          "name": "Outlook",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "id": "section-support-1",
+      "name": "Support",
+      "status": "error",
+      "agents": [
+        {
+          "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
+          "name": "Troubleshoot",
+          "status": "error"
         }
       ]
     }
