@@ -1,59 +1,130 @@
 {
-  "updated": "2026-10-13T12:01:00+02:00",
+  "updated": "2026-10-13T12:15:00+02:00",
   "groups": [
     {
       "id": "section-mu0dk3jf-1",
-      "name": "Troubleshoot",
-      "status": "attention",
+      "name": "Ops",
+      "status": "healthy",
       "agents": [
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
-          "name": "Troubleshoot",
+          "name": "Scheduler",
+          "status": "healthy"
+        },
+        {
+          "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
+          "name": "Inventory",
           "status": "attention"
+        },
+        {
+          "id": "d69bb9ae-4b5d-42ab-833c-2e464a9d99be",
+          "name": "Logistics",
+          "status": "healthy"
         }
       ]
     },
     {
       "id": "section-mtzjz3u3-2",
-      "name": "Personal",
-      "status": "error",
+      "name": "Content",
+      "status": "healthy",
       "agents": [
         {
-          "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
-          "name": "Jimmy",
+          "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
+          "name": "Writer",
           "status": "healthy"
         },
         {
-          "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
-          "name": "Agenda",
-          "status": "attention"
-        },
-        {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
-          "name": "Outlook",
-          "status": "attention"
+          "name": "Designer",
+          "status": "healthy"
         },
         {
           "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
-          "name": "AI knowledge",
+          "name": "SEO",
           "status": "attention"
-        },
-        {
-          "id": "79004317-51a4-4ec5-912b-165fc345908d",
-          "name": "💰",
-          "status": "error"
         }
       ]
     },
     {
       "id": "section-mtzzp0fh-1",
-      "name": "Fresh",
+      "name": "Finance",
+      "status": "attention",
+      "agents": [
+        {
+          "id": "79004317-51a4-4ec5-912b-165fc345908d",
+          "name": "Invoicing",
+          "status": "error"
+        },
+        {
+          "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
+          "name": "Budget",
+          "status": "healthy"
+        },
+        {
+          "id": "1eaf0b5d-7036-4092-bd95-beecaa6fd2be",
+          "name": "Reports",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "id": "db297dbc-54e2-40aa-bb6f-9a61722cdf4f",
+      "name": "Sales",
       "status": "healthy",
       "agents": [
         {
-          "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
-          "name": "Hilde Mail",
+          "id": "8ce78e80-eedf-4fe0-a22d-2e47a5966a4a",
+          "name": "LeadGen",
           "status": "healthy"
+        },
+        {
+          "id": "548b8cf5-3bf2-4b12-9153-90a8b26a921b",
+          "name": "Closer",
+          "status": "healthy"
+        },
+        {
+          "id": "713ce321-dd6c-4843-b72c-bf988698be4c",
+          "name": "CRM",
+          "status": "attention"
+        }
+      ]
+    },
+    {
+      "id": "315de210-e21f-4023-8192-030b35a32166",
+      "name": "Research",
+      "status": "healthy",
+      "agents": [
+        {
+          "id": "64b18005-4d70-4402-80d1-60a38fd85a3c",
+          "name": "Analyst",
+          "status": "healthy"
+        },
+        {
+          "id": "7ac88e9d-827e-4de2-8b03-580ca4dd22e2",
+          "name": "DataMiner",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "id": "58922133-3956-42ae-8d36-a69af31abb0f",
+      "name": "Support",
+      "status": "error",
+      "agents": [
+        {
+          "id": "e506e828-11e2-42d3-af46-cd7a9c10cfaa",
+          "name": "Tickets",
+          "status": "attention"
+        },
+        {
+          "id": "066ae879-a2cc-41aa-9ba6-9e201ff5b9bb",
+          "name": "Chatbot",
+          "status": "healthy"
+        },
+        {
+          "id": "b53e2d25-3d94-42bc-be8d-4cff38448f3b",
+          "name": "Escalations",
+          "status": "error"
         }
       ]
     }
