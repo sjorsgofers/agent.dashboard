@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-14T10:16:00+02:00",
+  "updated": "2026-10-14T10:58:25+02:00",
   "groups": [
     {
       "id": "section-mu0dk3jf-1",
       "name": "Troubleshoot",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
@@ -26,7 +26,7 @@
         {
           "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
           "name": "Agenda",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
@@ -40,8 +40,8 @@
         },
         {
           "id": "79004317-51a4-4ec5-912b-165fc345908d",
-          "name": "\ud83d\udcb0",
-          "status": "error"
+          "name": "💰",
+          "status": "attention"
         }
       ]
     },
