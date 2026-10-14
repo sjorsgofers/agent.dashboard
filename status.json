@@ -82,13 +82,7 @@
       "id": "section-support-001",
       "name": "Support",
       "status": "healthy",
-      "agents": [
-        {
-          "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
-          "name": "Helpdesk",
-          "status": "healthy"
-        }
-      ]
+      "agents": []
     }
   ]
 }
