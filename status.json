@@ -81,12 +81,12 @@
     {
       "id": "section-support-001",
       "name": "Support",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
-          "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
+          "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Helpdesk",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     }
