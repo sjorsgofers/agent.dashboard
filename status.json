@@ -1,1 +1,61 @@
-{"updated":"2026-10-14T10:00:52+02:00","groups":[{"id":"section-mu0dk3jf-1","name":"Troubleshoot","status":"attention","agents":[{"id":"8b21d693-6d0f-4356-b884-24e130e5c7de","name":"Troubleshoot","status":"attention"}]},{"id":"section-mtzjz3u3-2","name":"Personal","status":"attention","agents":[{"id":"a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0","name":"Jimmy","status":"healthy"},{"id":"81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9","name":"Agenda","status":"healthy"},{"id":"b8187bfd-37e2-4b8f-990f-58adb04901cb","name":"Outlook","status":"healthy"},{"id":"ca274fbd-8610-4ea7-b8db-dfa4c6d6e712","name":"AI knowledge","status":"healthy"},{"id":"79004317-51a4-4ec5-912b-165fc345908d","name":"💰","status":"attention"}]},{"id":"section-mtzzp0fh-1","name":"Fresh","status":"healthy","agents":[{"id":"b354d5eb-3a41-4bf8-800c-33d8fa7c3105","name":"Hilde Mail","status":"healthy"}]}]}
+{
+  "updated": "2026-10-14T10:16:00+02:00",
+  "groups": [
+    {
+      "id": "section-mu0dk3jf-1",
+      "name": "Troubleshoot",
+      "status": "healthy",
+      "agents": [
+        {
+          "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
+          "name": "Troubleshoot",
+          "status": "healthy"
+        }
+      ]
+    },
+    {
+      "id": "section-mtzjz3u3-2",
+      "name": "Personal",
+      "status": "attention",
+      "agents": [
+        {
+          "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
+          "name": "Jimmy",
+          "status": "healthy"
+        },
+        {
+          "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
+          "name": "Agenda",
+          "status": "attention"
+        },
+        {
+          "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
+          "name": "Outlook",
+          "status": "healthy"
+        },
+        {
+          "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
+          "name": "AI knowledge",
+          "status": "healthy"
+        },
+        {
+          "id": "79004317-51a4-4ec5-912b-165fc345908d",
+          "name": "\ud83d\udcb0",
+          "status": "error"
+        }
+      ]
+    },
+    {
+      "id": "section-mtzzp0fh-1",
+      "name": "Fresh",
+      "status": "healthy",
+      "agents": [
+        {
+          "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
+          "name": "Hilde Mail",
+          "status": "healthy"
+        }
+      ]
+    }
+  ]
+}
