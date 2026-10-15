@@ -1,1 +1,73 @@
-{"updated":"2026-10-15T21:02:00+02:00","groups":[{"id":"section-mu0dk3jf-1","name":"Troubleshoot","status":"attention","agents":[{"id":"8b21d693-6d0f-4356-b884-24e130e5c7de","name":"Troubleshoot","status":"attention"}]},{"id":"section-mtzjz3u3-2","name":"Personal","status":"attention","agents":[{"id":"a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0","name":"Jimmy","status":"healthy"},{"id":"81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9","name":"Agenda","status":"healthy"},{"id":"b8187bfd-37e2-4b8f-990f-58adb04901cb","name":"Outlook","status":"healthy"},{"id":"ca274fbd-8610-4ea7-b8db-dfa4c6d6e712","name":"AI knowledge","status":"healthy"},{"id":"79004317-51a4-4ec5-912b-165fc345908d","name":"💰","status":"attention"}]},{"id":"section-mtzzp0fh-1","name":"Fresh","status":"healthy","agents":[{"id":"b354d5eb-3a41-4bf8-800c-33d8fa7c3105","name":"Hilde Mail","status":"healthy"}]}]}
+{
+  "updated": "2026-10-15T21:15:00+02:00",
+  "groups": [
+    {
+      "id": "chief",
+      "name": "Chief",
+      "status": "healthy",
+      "agents": [
+        { "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0", "name": "Jimmy", "status": "healthy" },
+        { "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9", "name": "Agenda", "status": "healthy" }
+      ]
+    },
+    {
+      "id": "ops",
+      "name": "Ops",
+      "status": "attention",
+      "agents": [
+        { "id": "8b21d693-6d0f-4356-b884-24e130e5c7de", "name": "Troubleshoot", "status": "attention" },
+        { "id": "ops-monitoring", "name": "Monitoring", "status": "healthy" },
+        { "id": "ops-deployment", "name": "Deployment", "status": "healthy" }
+      ]
+    },
+    {
+      "id": "content",
+      "name": "Content",
+      "status": "healthy",
+      "agents": [
+        { "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712", "name": "AI knowledge", "status": "healthy" },
+        { "id": "content-copywriter", "name": "Copywriter", "status": "healthy" },
+        { "id": "content-editor", "name": "Editor", "status": "healthy" }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "status": "attention",
+      "agents": [
+        { "id": "79004317-51a4-4ec5-912b-165fc345908d", "name": "Budget", "status": "attention" },
+        { "id": "finance-invoicing", "name": "Invoicing", "status": "healthy" },
+        { "id": "finance-reporting", "name": "Reporting", "status": "error" }
+      ]
+    },
+    {
+      "id": "sales",
+      "name": "Sales",
+      "status": "healthy",
+      "agents": [
+        { "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105", "name": "Hilde Mail", "status": "healthy" },
+        { "id": "sales-leads", "name": "Leads", "status": "healthy" },
+        { "id": "sales-followup", "name": "Follow-up", "status": "healthy" }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "status": "healthy",
+      "agents": [
+        { "id": "e52e1ac7-35e3-428e-97df-ed0139698fd8", "name": "Research", "status": "healthy" },
+        { "id": "research-briefings", "name": "Briefings", "status": "healthy" }
+      ]
+    },
+    {
+      "id": "support",
+      "name": "Support",
+      "status": "error",
+      "agents": [
+        { "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb", "name": "Outlook", "status": "healthy" },
+        { "id": "support-tickets", "name": "Tickets", "status": "error" },
+        { "id": "support-knowledge", "name": "Knowledge base", "status": "attention" }
+      ]
+    }
+  ]
+}
