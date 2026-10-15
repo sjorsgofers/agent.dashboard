@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T17:03:52+02:00",
+  "updated": "2026-10-15T17:20:00+02:00",
   "groups": [
     {
       "id": "section-mu0dk3jf-1",
@@ -16,7 +16,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Personal",
-      "status": "attention",
+      "status": "error",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -36,12 +36,12 @@
         {
           "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
           "name": "AI knowledge",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "79004317-51a4-4ec5-912b-165fc345908d",
-          "name": "💰",
-          "status": "attention"
+          "name": "\ud83d\udcb0",
+          "status": "error"
         }
       ]
     },
