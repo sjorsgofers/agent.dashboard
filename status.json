@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T15:27:00+02:00",
+  "updated": "2026-10-15T16:01:00+02:00",
   "groups": [
     {
       "id": "section-mu0dk3jf-1",
@@ -16,7 +16,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Personal",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -31,7 +31,7 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
@@ -41,7 +41,7 @@
         {
           "id": "79004317-51a4-4ec5-912b-165fc345908d",
           "name": "💰",
-          "status": "error"
+          "status": "attention"
         }
       ]
     },
