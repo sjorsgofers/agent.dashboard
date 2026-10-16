@@ -1,1 +1,65 @@
-{"updated":"2026-10-16T20:58:00+02:00","groups":[{"id":"section-mu0dk3jf-1","name":"Troubleshoot","status":"attention","agents":[{"id":"8b21d693-6d0f-4356-b884-24e130e5c7de","name":"Troubleshoot","status":"attention"}]},{"id":"section-mtzjz3u3-2","name":"Personal","status":"attention","agents":[{"id":"a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0","name":"Jimmy","status":"healthy"},{"id":"81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9","name":"Agenda","status":"healthy"},{"id":"b8187bfd-37e2-4b8f-990f-58adb04901cb","name":"Outlook","status":"healthy"},{"id":"ca274fbd-8610-4ea7-b8db-dfa4c6d6e712","name":"AI knowledge","status":"healthy"},{"id":"79004317-51a4-4ec5-912b-165fc345908d","name":"💰","status":"attention"}]},{"id":"section-mtzzp0fh-1","name":"Fresh","status":"healthy","agents":[{"id":"b354d5eb-3a41-4bf8-800c-33d8fa7c3105","name":"Hilde Mail","status":"healthy"}]}]}
+{
+  "updated": "2026-10-16T21:14:00+02:00",
+  "groups": [
+    {
+      "id": "section-ops-001",
+      "name": "Ops",
+      "status": "healthy",
+      "agents": [
+        {"id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890", "name": "Infrastructure", "status": "healthy"},
+        {"id": "b2c3d4e5-f6a7-8901-bcde-f23456789012", "name": "Monitoring", "status": "healthy"},
+        {"id": "c3d4e5f6-a7b8-9012-cdef-345678901234", "name": "Deployments", "status": "attention"}
+      ]
+    },
+    {
+      "id": "section-content-001",
+      "name": "Content",
+      "status": "healthy",
+      "agents": [
+        {"id": "d4e5f6a7-b8c9-0123-def0-456789012345", "name": "Writer", "status": "healthy"},
+        {"id": "e5f6a7b8-c9d0-1234-ef01-567890123456", "name": "Editor", "status": "healthy"},
+        {"id": "f6a7b8c9-d0e1-2345-f012-678901234567", "name": "SEO", "status": "healthy"}
+      ]
+    },
+    {
+      "id": "section-finance-001",
+      "name": "Finance",
+      "status": "attention",
+      "agents": [
+        {"id": "a7b8c9d0-e1f2-3456-0123-789012345678", "name": "Invoicing", "status": "healthy"},
+        {"id": "b8c9d0e1-f2a3-4567-1234-890123456789", "name": "Budgeting", "status": "attention"},
+        {"id": "c9d0e1f2-a3b4-5678-2345-901234567890", "name": "Reporting", "status": "healthy"}
+      ]
+    },
+    {
+      "id": "section-sales-001",
+      "name": "Sales",
+      "status": "healthy",
+      "agents": [
+        {"id": "d0e1f2a3-b4c5-6789-3456-012345678901", "name": "Lead Gen", "status": "healthy"},
+        {"id": "e1f2a3b4-c5d6-7890-4567-123456789012", "name": "CRM Sync", "status": "healthy"},
+        {"id": "f2a3b4c5-d6e7-8901-5678-234567890123", "name": "Outreach", "status": "error"}
+      ]
+    },
+    {
+      "id": "section-research-001",
+      "name": "Research",
+      "status": "healthy",
+      "agents": [
+        {"id": "a3b4c5d6-e7f8-9012-6789-345678901234", "name": "Market", "status": "healthy"},
+        {"id": "b4c5d6e7-f8a9-0123-7890-456789012345", "name": "Competitor", "status": "healthy"},
+        {"id": "c5d6e7f8-a9b0-1234-8901-567890123456", "name": "Trends", "status": "attention"}
+      ]
+    },
+    {
+      "id": "section-support-001",
+      "name": "Support",
+      "status": "error",
+      "agents": [
+        {"id": "d6e7f8a9-b0c1-2345-9012-678901234567", "name": "Ticketing", "status": "healthy"},
+        {"id": "e7f8a9b0-c1d2-3456-0123-789012345678", "name": "Chat", "status": "error"},
+        {"id": "f8a9b0c1-d2e3-4567-1234-890123456789", "name": "Knowledge Base", "status": "healthy"}
+      ]
+    }
+  ]
+}
