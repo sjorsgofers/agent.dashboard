@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T22:15:00+02:00",
+  "updated": "2026-10-17T08:18:00+02:00",
   "groups": [
     {
       "id": "section-ops-001",
@@ -38,7 +38,7 @@
       "agents": [
         {"id": "d0e1f2a3-b4c5-6789-3456-012345678901", "name": "Lead Gen", "status": "healthy"},
         {"id": "e1f2a3b4-c5d6-7890-4567-123456789012", "name": "CRM Sync", "status": "healthy"},
-        {"id": "f2a3b4c5-d6e7-8901-5678-234567890123", "name": "Outreach", "status": "error"}
+        {"id": "f2a3b4c5-d6e7-8901-5678-234567890123", "name": "Outreach", "status": "healthy"}
       ]
     },
     {
@@ -47,8 +47,8 @@
       "status": "healthy",
       "agents": [
         {"id": "a3b4c5d6-e7f8-9012-6789-345678901234", "name": "Market", "status": "healthy"},
-        {"id": "b4c5d6e7-f8a9-0123-7890-456789012345", "name": "Competitor", "status": "healthy"},
-        {"id": "c5d6e7f8-a9b0-1234-8901-567890123456", "name": "Trends", "status": "attention"}
+        {"id": "b4c5d6e7-f8a9-0123-7890-456789012345", "name": "Competitor", "status": "attention"},
+        {"id": "c5d6e7f8-a9b0-1234-8901-567890123456", "name": "Trends", "status": "healthy"}
       ]
     },
     {
