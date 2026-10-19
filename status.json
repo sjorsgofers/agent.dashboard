@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T22:13:00+02:00",
+  "updated": "2026-10-19T08:20:00+02:00",
   "groups": [
     {
       "id": "section-mu0dk3jf-1",
@@ -21,7 +21,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Content",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
@@ -31,14 +31,14 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Editor",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
     {
       "id": "section-mtzzp0fh-1",
       "name": "Finance",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "ca274fbd-8610-4ea7-b8db-dfa4c6d6e712",
@@ -48,14 +48,14 @@
         {
           "id": "79004317-51a4-4ec5-912b-165fc345908d",
           "name": "Forecasting",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
     {
       "id": "section-sales-1",
       "name": "Sales",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
@@ -65,7 +65,7 @@
         {
           "id": "c9d8e7f6-5a4b-3c2d-1e0f-9a8b7c6d5e4f",
           "name": "Pipeline Tracker",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
@@ -89,7 +89,7 @@
     {
       "id": "section-support-1",
       "name": "Support",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "e3f4a5b6-7c8d-9e0f-1a2b-3c4d5e6f7a8b",
@@ -99,7 +99,7 @@
         {
           "id": "f9a0b1c2-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
           "name": "FAQ Bot",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     }
