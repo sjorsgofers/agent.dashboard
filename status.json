@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21T18:16:00+02:00",
+  "updated": "2026-10-21T19:13:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -46,7 +46,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Buzzflow",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
