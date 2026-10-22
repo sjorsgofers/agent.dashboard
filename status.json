@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T13:16:00+02:00",
+  "updated": "2026-10-22T14:24:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -114,7 +114,7 @@
     {
       "id": "section-mtzzp0fh-1",
       "name": "Fresh",
-      "status": "attention",
+      "status": "error",
       "agents": [
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
