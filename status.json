@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T10:13:00+02:00",
+  "updated": "2026-10-22T11:13:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -85,7 +85,7 @@
         {
           "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
           "name": "Agenda",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
