@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T11:13:00+02:00",
+  "updated": "2026-10-22T12:14:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -46,7 +46,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Buzzflow",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
@@ -114,12 +114,12 @@
     {
       "id": "section-mtzzp0fh-1",
       "name": "Fresh",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Hilde Mail",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     }
