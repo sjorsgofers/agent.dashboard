@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T14:24:00+02:00",
+  "updated": "2026-10-22T15:28:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -75,7 +75,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "PA",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
