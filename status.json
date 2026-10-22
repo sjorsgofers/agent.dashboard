@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T12:14:00+02:00",
+  "updated": "2026-10-22T13:16:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -19,7 +19,7 @@
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
           "name": "Critic (Red Team)",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
@@ -34,7 +34,7 @@
         {
           "id": "2ac9a2db-9284-43f8-9137-7812e41b99e3",
           "name": "CPO",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "db70b5b4-37e3-430a-a3d4-21a0dd48fb5b",
@@ -114,12 +114,12 @@
     {
       "id": "section-mtzzp0fh-1",
       "name": "Fresh",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Hilde Mail",
-          "status": "healthy"
+          "status": "error"
         }
       ]
     }
