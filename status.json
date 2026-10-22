@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T09:16:00+02:00",
+  "updated": "2026-10-22T10:13:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -56,7 +56,7 @@
         {
           "id": "2e9720e8-6dcd-40e2-b6c1-457f29320de1",
           "name": "Buzzflow Frontdesk",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
@@ -75,7 +75,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "PA",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -85,7 +85,7 @@
         {
           "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
           "name": "Agenda",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
