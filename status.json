@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-22T18:19:00+02:00",
+  "updated": "2026-10-22T19:13:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "error",
+      "status": "attention",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -24,7 +24,7 @@
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "error"
+          "status": "healthy"
         }
       ]
     },
@@ -58,12 +58,12 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
           "name": "CFO",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "db70b5b4-37e3-430a-a3d4-21a0dd48fb5b",
