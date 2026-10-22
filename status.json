@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T16:21:00+02:00",
+  "updated": "2026-10-22T17:19:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -19,12 +19,12 @@
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
           "name": "Critic (Red Team)",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
           "name": "CFO",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
@@ -46,7 +46,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Buzzflow",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
@@ -56,7 +56,7 @@
         {
           "id": "2e9720e8-6dcd-40e2-b6c1-457f29320de1",
           "name": "Buzzflow Frontdesk",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
@@ -75,7 +75,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "PA",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
