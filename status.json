@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T19:15:00+02:00",
+  "updated": "2026-10-23T20:16:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -46,12 +46,12 @@
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
