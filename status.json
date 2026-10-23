@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T13:17:00+02:00",
+  "updated": "2026-10-23T14:26:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -58,7 +58,7 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
