@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-23T16:32:00+02:00",
+  "updated": "2026-10-23T17:22:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -19,7 +19,7 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
@@ -31,7 +31,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "2ac9a2db-9284-43f8-9137-7812e41b99e3",
@@ -51,14 +51,14 @@
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
@@ -73,7 +73,7 @@
         {
           "id": "4add150d-b813-4f6b-a7b1-943b249d36bc",
           "name": "COO",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
@@ -97,7 +97,7 @@
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "attention",
+      "status": "error",
       "agents": [
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
@@ -107,19 +107,19 @@
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
           "name": "Critic (Red Team)",
-          "status": "attention"
+          "status": "error"
         }
       ]
     },
     {
       "id": "section-mtzzp0fh-1",
       "name": "Support",
-      "status": "error",
+      "status": "healthy",
       "agents": [
         {
           "id": "2e9720e8-6dcd-40e2-b6c1-457f29320de1",
           "name": "Buzzflow Frontdesk",
-          "status": "error"
+          "status": "healthy"
         }
       ]
     }
