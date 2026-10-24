@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T08:16:00+02:00",
+  "updated": "2026-10-24T09:15:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -107,7 +107,7 @@
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
           "name": "Critic (Red Team)",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
