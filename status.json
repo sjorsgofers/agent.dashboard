@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T21:14:00+02:00",
+  "updated": "2026-10-24T22:14:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -41,7 +41,7 @@
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
           "name": "Startup",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
@@ -80,7 +80,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
