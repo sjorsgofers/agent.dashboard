@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T13:15:00+02:00",
+  "updated": "2026-10-24T14:22:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -31,7 +31,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "attention",
+      "status": "error",
       "agents": [
         {
           "id": "2ac9a2db-9284-43f8-9137-7812e41b99e3",
@@ -46,7 +46,7 @@
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "attention"
+          "status": "error"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
@@ -80,12 +80,12 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
           "name": "Buzzflow Leads",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
@@ -114,12 +114,12 @@
     {
       "id": "section-mtzzp0fh-1",
       "name": "Support",
-      "status": "error",
+      "status": "healthy",
       "agents": [
         {
           "id": "2e9720e8-6dcd-40e2-b6c1-457f29320de1",
           "name": "Buzzflow Frontdesk",
-          "status": "error"
+          "status": "healthy"
         }
       ]
     }
