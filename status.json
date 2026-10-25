@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T16:20:00+02:00",
+  "updated": "2026-10-25T17:19:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -51,7 +51,7 @@
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
@@ -85,7 +85,7 @@
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
           "name": "Buzzflow Leads",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
