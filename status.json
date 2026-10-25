@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T21:16:00+02:00",
+  "updated": "2026-10-25T22:19:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -19,7 +19,7 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
@@ -58,7 +58,7 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
@@ -73,14 +73,14 @@
         {
           "id": "4add150d-b813-4f6b-a7b1-943b249d36bc",
           "name": "COO",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "error",
+      "status": "attention",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
@@ -90,14 +90,14 @@
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Hilde Mail",
-          "status": "error"
+          "status": "attention"
         }
       ]
     },
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "attention",
+      "status": "error",
       "agents": [
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
@@ -107,7 +107,7 @@
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
           "name": "Critic (Red Team)",
-          "status": "attention"
+          "status": "error"
         }
       ]
     },
