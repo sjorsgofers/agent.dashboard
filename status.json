@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T09:16:30+02:00",
+  "updated": "2026-10-25T10:14:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -24,7 +24,7 @@
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
@@ -41,7 +41,7 @@
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
           "name": "Startup",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
@@ -58,7 +58,7 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
@@ -90,7 +90,7 @@
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Hilde Mail",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
@@ -102,7 +102,7 @@
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
           "name": "Head of Research",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
