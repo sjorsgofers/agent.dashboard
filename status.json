@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T11:13:00+02:00",
+  "updated": "2026-10-25T12:16:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -24,7 +24,7 @@
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
@@ -51,7 +51,7 @@
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
@@ -102,7 +102,7 @@
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
           "name": "Head of Research",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
