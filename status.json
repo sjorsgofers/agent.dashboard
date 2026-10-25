@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T20:15:00+02:00",
+  "updated": "2026-10-25T21:16:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -31,7 +31,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "2ac9a2db-9284-43f8-9137-7812e41b99e3",
@@ -46,7 +46,7 @@
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
@@ -58,7 +58,7 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
@@ -73,7 +73,7 @@
         {
           "id": "4add150d-b813-4f6b-a7b1-943b249d36bc",
           "name": "COO",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
