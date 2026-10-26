@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T22:19:00+02:00",
+  "updated": "2026-10-26T08:18:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -46,7 +46,7 @@
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
