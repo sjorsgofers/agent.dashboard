@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T17:23:00+02:00",
+  "updated": "2026-10-26T18:15:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -41,7 +41,7 @@
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
           "name": "Startup",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
@@ -51,7 +51,7 @@
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
