@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-26T15:27:00+02:00",
+  "updated": "2026-10-26T16:22:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -41,12 +41,12 @@
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
           "name": "Startup",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
@@ -80,7 +80,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "attention",
+      "status": "error",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
@@ -97,7 +97,7 @@
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
