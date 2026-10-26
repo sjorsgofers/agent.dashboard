@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-26T16:22:00+02:00",
+  "updated": "2026-10-26T17:23:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
