@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T13:24:00+02:00",
+  "updated": "2026-10-27T14:31:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -19,7 +19,7 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
@@ -31,7 +31,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "2ac9a2db-9284-43f8-9137-7812e41b99e3",
@@ -41,7 +41,7 @@
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
           "name": "Startup",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
@@ -51,19 +51,19 @@
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
           "name": "CFO",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "db70b5b4-37e3-430a-a3d4-21a0dd48fb5b",
@@ -107,7 +107,7 @@
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
           "name": "Critic (Red Team)",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
