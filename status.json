@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T18:19:00+02:00",
+  "updated": "2026-10-27T19:15:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -73,14 +73,14 @@
         {
           "id": "4add150d-b813-4f6b-a7b1-943b249d36bc",
           "name": "COO",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "attention",
+      "status": "error",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
@@ -97,7 +97,7 @@
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
