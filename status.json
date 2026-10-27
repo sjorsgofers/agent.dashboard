@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T09:16:00+02:00",
+  "updated": "2026-10-27T10:14:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -24,7 +24,7 @@
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
