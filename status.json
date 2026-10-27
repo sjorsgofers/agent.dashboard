@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T17:25:00+02:00",
+  "updated": "2026-10-27T18:19:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -46,12 +46,12 @@
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
@@ -80,7 +80,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
@@ -90,24 +90,24 @@
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Hilde Mail",
-          "status": "healthy"
+          "status": "error"
         }
       ]
     },
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "error",
+      "status": "healthy",
       "agents": [
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
           "name": "Head of Research",
-          "status": "error"
+          "status": "healthy"
         },
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
           "name": "Critic (Red Team)",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
