@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-28T11:15:00+02:00",
+  "updated": "2026-10-28T12:16:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -19,12 +19,12 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
@@ -46,19 +46,19 @@
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "healthy",
+      "status": "error",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
@@ -73,7 +73,7 @@
         {
           "id": "4add150d-b813-4f6b-a7b1-943b249d36bc",
           "name": "COO",
-          "status": "healthy"
+          "status": "error"
         }
       ]
     },
