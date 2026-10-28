@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-28T13:22:00+02:00",
+  "updated": "2026-10-28T14:25:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -19,7 +19,7 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
@@ -31,7 +31,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "2ac9a2db-9284-43f8-9137-7812e41b99e3",
@@ -46,7 +46,7 @@
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
