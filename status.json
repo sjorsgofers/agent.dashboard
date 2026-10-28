@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T14:25:00+02:00",
+  "updated": "2026-10-28T15:19:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -58,7 +58,7 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "error",
+      "status": "healthy",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
@@ -73,7 +73,7 @@
         {
           "id": "4add150d-b813-4f6b-a7b1-943b249d36bc",
           "name": "COO",
-          "status": "error"
+          "status": "healthy"
         }
       ]
     },
@@ -114,12 +114,12 @@
     {
       "id": "section-mtzzp0fh-1",
       "name": "Support",
-      "status": "healthy",
+      "status": "error",
       "agents": [
         {
           "id": "2e9720e8-6dcd-40e2-b6c1-457f29320de1",
           "name": "Buzzflow Frontdesk",
-          "status": "healthy"
+          "status": "error"
         }
       ]
     }
