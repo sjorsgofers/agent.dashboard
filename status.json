@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-29T14:30:00+02:00",
+  "updated": "2026-10-29T15:25:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "error",
+      "status": "healthy",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -24,7 +24,7 @@
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "error"
+          "status": "healthy"
         }
       ]
     },
@@ -41,7 +41,7 @@
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
           "name": "Startup",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
@@ -51,7 +51,7 @@
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
@@ -80,7 +80,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
@@ -90,19 +90,19 @@
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Hilde Mail",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
           "name": "Head of Research",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
