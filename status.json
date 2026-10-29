@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T13:25:00+02:00",
+  "updated": "2026-10-29T14:30:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -19,7 +19,7 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
