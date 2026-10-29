@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-29T20:14:00+02:00",
+  "updated": "2026-10-29T21:14:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -58,7 +58,7 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "healthy",
+      "status": "error",
       "agents": [
         {
           "id": "41171a75-f867-4403-a3e8-f5bcaa47200e",
@@ -68,7 +68,7 @@
         {
           "id": "db70b5b4-37e3-430a-a3d4-21a0dd48fb5b",
           "name": "CEO",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "4add150d-b813-4f6b-a7b1-943b249d36bc",
