@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-29T09:15:00+02:00",
+  "updated": "2026-10-29T10:18:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "healthy",
+      "status": "error",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -14,7 +14,7 @@
         {
           "id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9",
           "name": "Agenda",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
@@ -24,14 +24,14 @@
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
           "name": "Troubleshoot",
-          "status": "attention"
+          "status": "error"
         }
       ]
     },
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "2ac9a2db-9284-43f8-9137-7812e41b99e3",
@@ -41,12 +41,12 @@
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
           "name": "Startup",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
           "name": "Happie",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
@@ -85,24 +85,24 @@
         {
           "id": "b751384a-f0a9-4d57-9951-c178464627d5",
           "name": "Buzzflow Leads",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105",
           "name": "Hilde Mail",
-          "status": "attention"
+          "status": "healthy"
         }
       ]
     },
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30",
           "name": "Head of Research",
-          "status": "healthy"
+          "status": "attention"
         },
         {
           "id": "64a790f2-f7cc-49e2-885a-36931364dd3e",
