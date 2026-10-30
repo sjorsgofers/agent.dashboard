@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T21:15:00+02:00",
+  "updated": "2026-10-30T22:15:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -15,7 +15,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {"id": "2ac9a2db-9284-43f8-9137-7812e41b99e3", "name": "CPO", "status": "healthy"},
         {"id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0", "name": "Startup", "status": "healthy"},
