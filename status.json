@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T19:14:00+02:00",
+  "updated": "2026-10-30T20:18:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -18,8 +18,8 @@
       "status": "attention",
       "agents": [
         {"id": "2ac9a2db-9284-43f8-9137-7812e41b99e3", "name": "CPO", "status": "healthy"},
-        {"id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0", "name": "Startup", "status": "attention"},
-        {"id": "34cfefb6-5e3d-49e3-ab2c-45aace425944", "name": "Happie", "status": "healthy"},
+        {"id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0", "name": "Startup", "status": "healthy"},
+        {"id": "34cfefb6-5e3d-49e3-ab2c-45aace425944", "name": "Happie", "status": "attention"},
         {"id": "ef622abe-96ef-4986-85f4-d253dfdd0f14", "name": "Functieoverdracht bedrijfsleider", "status": "healthy"}
       ]
     },
