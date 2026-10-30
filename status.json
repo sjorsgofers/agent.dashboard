@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-30T11:20:00+02:00",
+  "updated": "2026-10-30T12:20:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {
           "id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0",
@@ -19,7 +19,7 @@
         {
           "id": "b8187bfd-37e2-4b8f-990f-58adb04901cb",
           "name": "Outlook",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "8b21d693-6d0f-4356-b884-24e130e5c7de",
@@ -31,7 +31,7 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "2ac9a2db-9284-43f8-9137-7812e41b99e3",
@@ -41,7 +41,7 @@
         {
           "id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0",
           "name": "Startup",
-          "status": "attention"
+          "status": "healthy"
         },
         {
           "id": "34cfefb6-5e3d-49e3-ab2c-45aace425944",
@@ -51,7 +51,7 @@
         {
           "id": "ef622abe-96ef-4986-85f4-d253dfdd0f14",
           "name": "Functieoverdracht bedrijfsleider",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     },
@@ -114,12 +114,12 @@
     {
       "id": "section-mtzzp0fh-1",
       "name": "Support",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {
           "id": "2e9720e8-6dcd-40e2-b6c1-457f29320de1",
           "name": "Buzzflow Frontdesk",
-          "status": "healthy"
+          "status": "attention"
         }
       ]
     }
