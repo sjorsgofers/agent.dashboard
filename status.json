@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T20:18:00+02:00",
+  "updated": "2026-10-30T21:15:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -36,7 +36,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "b751384a-f0a9-4d57-9951-c178464627d5", "name": "Buzzflow Leads", "status": "healthy"},
         {"id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105", "name": "Hilde Mail", "status": "attention"}
