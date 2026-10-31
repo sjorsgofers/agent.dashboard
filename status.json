@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-31T08:20:00+02:00",
+  "updated": "2026-10-31T09:20:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
       "name": "Ops",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "a7dd7b7a-0ce0-4d1c-b253-633ba9f3fea0", "name": "Jimmy", "status": "healthy"},
         {"id": "81e3fd9d-6db7-4262-834a-e9a9b6bd6fe9", "name": "Agenda", "status": "healthy"},
@@ -26,7 +26,7 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "41171a75-f867-4403-a3e8-f5bcaa47200e", "name": "CFO", "status": "healthy"},
         {"id": "db70b5b4-37e3-430a-a3d4-21a0dd48fb5b", "name": "CEO", "status": "healthy"},
@@ -45,7 +45,7 @@
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30", "name": "Head of Research", "status": "healthy"},
         {"id": "64a790f2-f7cc-49e2-885a-36931364dd3e", "name": "Critic (Red Team)", "status": "attention"}
@@ -54,9 +54,9 @@
     {
       "id": "section-mtzzp0fh-1",
       "name": "Support",
-      "status": "error",
+      "status": "healthy",
       "agents": [
-        {"id": "2e9720e8-6dcd-40e2-b6c1-457f29320de1", "name": "Buzzflow Frontdesk", "status": "error"}
+        {"id": "2e9720e8-6dcd-40e2-b6c1-457f29320de1", "name": "Buzzflow Frontdesk", "status": "healthy"}
       ]
     }
   ]
