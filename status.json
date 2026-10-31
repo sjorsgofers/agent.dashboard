@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T15:20:00+02:00",
+  "updated": "2026-10-31T16:17:00+02:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -15,10 +15,10 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "2ac9a2db-9284-43f8-9137-7812e41b99e3", "name": "CPO", "status": "healthy"},
-        {"id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0", "name": "Startup", "status": "healthy"},
+        {"id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0", "name": "Startup", "status": "attention"},
         {"id": "34cfefb6-5e3d-49e3-ab2c-45aace425944", "name": "Happie", "status": "healthy"},
         {"id": "ef622abe-96ef-4986-85f4-d253dfdd0f14", "name": "Functieoverdracht bedrijfsleider", "status": "healthy"}
       ]
@@ -36,7 +36,7 @@
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "b751384a-f0a9-4d57-9951-c178464627d5", "name": "Buzzflow Leads", "status": "healthy"},
         {"id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105", "name": "Hilde Mail", "status": "attention"}
