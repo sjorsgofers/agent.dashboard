@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T17:17:00+01:00",
+  "updated": "2026-11-01T18:17:00+01:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -15,10 +15,10 @@
     {
       "id": "section-mvez06ba-1",
       "name": "Content",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "2ac9a2db-9284-43f8-9137-7812e41b99e3", "name": "CPO", "status": "healthy"},
-        {"id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0", "name": "Startup", "status": "attention"},
+        {"id": "4280f9d5-bff0-413d-8cab-bdef5a4f53f0", "name": "Startup", "status": "error"},
         {"id": "34cfefb6-5e3d-49e3-ab2c-45aace425944", "name": "Happie", "status": "healthy"},
         {"id": "ef622abe-96ef-4986-85f4-d253dfdd0f14", "name": "Functieoverdracht bedrijfsleider", "status": "healthy"}
       ]
@@ -45,7 +45,7 @@
     {
       "id": "section-mtzjyb6f-1",
       "name": "Research",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {"id": "e1c62bbc-4e18-420b-9f34-5d2da0d42a30", "name": "Head of Research", "status": "healthy"},
         {"id": "64a790f2-f7cc-49e2-885a-36931364dd3e", "name": "Critic (Red Team)", "status": "attention"}
