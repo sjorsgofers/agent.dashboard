@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T12:22:00+01:00",
+  "updated": "2026-11-08T13:25:00+01:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -26,17 +26,17 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "attention",
+      "status": "healthy",
       "agents": [
         {"id": "41171a75-f867-4403-a3e8-f5bcaa47200e", "name": "CFO", "status": "healthy"},
         {"id": "db70b5b4-37e3-430a-a3d4-21a0dd48fb5b", "name": "CEO", "status": "healthy"},
-        {"id": "4add150d-b813-4f6b-a7b1-943b249d36bc", "name": "COO", "status": "attention"}
+        {"id": "4add150d-b813-4f6b-a7b1-943b249d36bc", "name": "COO", "status": "healthy"}
       ]
     },
     {
       "id": "section-mtzjz3u3-2",
       "name": "Sales",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "b751384a-f0a9-4d57-9951-c178464627d5", "name": "Buzzflow Leads", "status": "healthy"},
         {"id": "b354d5eb-3a41-4bf8-800c-33d8fa7c3105", "name": "Hilde Mail", "status": "attention"}
