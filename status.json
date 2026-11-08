@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T08:25:30+01:00",
+  "updated": "2026-11-08T09:23:00+01:00",
   "groups": [
     {
       "id": "section-mvfdaa5r-1",
@@ -26,7 +26,7 @@
     {
       "id": "section-mu0dk3jf-1",
       "name": "Finance",
-      "status": "healthy",
+      "status": "attention",
       "agents": [
         {"id": "41171a75-f867-4403-a3e8-f5bcaa47200e", "name": "CFO", "status": "healthy"},
         {"id": "db70b5b4-37e3-430a-a3d4-21a0dd48fb5b", "name": "CEO", "status": "healthy"},
